@@ -32,7 +32,7 @@
 
         @endforeach
 
-        @json($selectedModels)
+
     </ul>
 
 
