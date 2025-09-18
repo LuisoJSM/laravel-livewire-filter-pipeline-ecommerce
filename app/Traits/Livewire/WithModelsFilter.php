@@ -3,7 +3,7 @@
 namespace App\Traits\Livewire;
 use App\Livewire\Shop\Filters\Filter;
 
-use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Collection;
 
 
 

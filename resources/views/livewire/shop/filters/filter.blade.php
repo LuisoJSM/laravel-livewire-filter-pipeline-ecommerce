@@ -11,10 +11,12 @@
         <input
         class="form-check-input me-1"
         type="checkbox"
-        value="{{ $filter->id }}"
+        value="{{ $model->id }}"
         id="{{ $alias }}--filter--{{ $model->id }}"
         wire:model.live="selectedModels"
         />
+
+            {{ $model->name }}
 
 
         <label
@@ -24,11 +26,13 @@
 
         </label>
 
-        <span class="badge bg-primary rounded-pill float-end">{{ $models->products_count }}</span>
+        <span class="badge bg-primary rounded-pill float-end">{{ $model->products_count }}</span>
 
         </li>
 
         @endforeach
+
+        @json($selectedModels)
     </ul>
 
 

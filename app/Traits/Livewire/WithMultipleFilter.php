@@ -4,6 +4,7 @@ namespace App\Traits\Livewire;
 
 use App\Livewire\Shop\Filters\Filter;
 use Illuminate\Database\Eloquent\Collection;
+
 use Illuminate\Support\Str;
 
 

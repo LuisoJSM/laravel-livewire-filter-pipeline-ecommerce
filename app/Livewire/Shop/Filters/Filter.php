@@ -32,7 +32,7 @@ class Filter extends Component
     public function render()
     {
         return view('livewire.shop.filters.filter',[
-            'filters' => $this->models(),
+            'models' => $this->models(),
             'alias' => Str::of(class_basename($this->eloquentModel))->lower()
         ]);
     }
