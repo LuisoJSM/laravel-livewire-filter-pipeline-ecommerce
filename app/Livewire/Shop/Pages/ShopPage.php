@@ -7,8 +7,10 @@ use Livewire\Component;
 class ShopPage extends Component
 {
 
-    public function resertFilters()
+    public function resetFilters()
     {
+
+
         //TODO restablecer los filtros de la tienda
     }
     public function render()
