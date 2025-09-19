@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Shop\Pages;
 
+use App\Livewire\Shop\Lists\ProductsList;
 use Livewire\Component;
 
 class ShopPage extends Component
@@ -13,9 +14,11 @@ class ShopPage extends Component
     public function resetFilters()
     {
 
+        $this->dispatch('reset-filters')->to(ProductsList::class);
 
-        //TODO restablecer los filtros de la tienda
     }
+
+
     public function render()
     {
         return view('livewire.shop.pages.shop-page');

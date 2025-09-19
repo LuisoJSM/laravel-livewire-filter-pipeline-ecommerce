@@ -37,7 +37,7 @@ class ProductsList extends Component
      * resets pagination to page 1.
      */
     #[On('filters-updated')]
-    public function refreshProductList(mixed $filters)
+    public function onFiltersUpdated(mixed $filters)
     {
         $key = key($filters);           // e.g. "category"
         $value = $filters[$key];        // e.g. [1, 3]
@@ -55,6 +55,16 @@ class ProductsList extends Component
      * - Called in mount() on first load.
      * - Also ensures any session values from past visits are removed.
      */
+
+    #[On('reset-filters')]
+    public function onResetFilters()
+    {
+
+        $this->resetFilters();
+
+        $this->dispatch('shop-reset-filters');
+
+    }
     private function resetFilters()
     {
         collect($this->filters)

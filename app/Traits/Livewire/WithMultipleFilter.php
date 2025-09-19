@@ -6,8 +6,7 @@ use App\Livewire\Shop\Filters\Filter;
 use Illuminate\Database\Eloquent\Collection;
 
 use Illuminate\Support\Str;
-
-
+use Livewire\Attributes\On;
 
 // For checkbox or multiples choices Filters
 
@@ -20,6 +19,15 @@ use Illuminate\Support\Str;
 trait WithMultipleFilter
 {
     public array $selectedModels = [];
+
+    #[On('shop-reset-filters')]
+
+    public function onresetFilters()
+    {
+        $this->selectedModels = [];
+    }
+
+
 
     public function updatedSelectedModels(): void
     {
