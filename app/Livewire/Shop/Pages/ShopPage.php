@@ -7,6 +7,9 @@ use Livewire\Component;
 class ShopPage extends Component
 {
 
+
+
+
     public function resetFilters()
     {
 
