@@ -1,19 +1,22 @@
-<div class="row">
+<div class="row g-4">
     @forelse ($products as $product)
-        <div
-            wire:key="product-{{ $product->id }}"
-            class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3"
-        >
+        <div wire:key="product-{{ $product->id }}" class="col-12 col-sm-6 col-md-4 col-lg-3">
             <x-product-card :product="$product" />
         </div>
     @empty
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Ups!</strong> There are no products with these filters.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="col-12">
+            <div class="alert alert-warning d-flex justify-content-between align-items-center" role="alert">
+                <div>
+                    <strong>Ups!</strong> No hay productos que coincidan con estos filtros.
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
         </div>
     @endforelse
 
     <div class="col-12">
-        {{ $products->links() }}
+        <div class="d-flex justify-content-center">
+            {{ $products->links() }}
+        </div>
     </div>
 </div>
