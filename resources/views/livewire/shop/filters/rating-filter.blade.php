@@ -1,26 +1,21 @@
 <x-card-filter :title="$title">
     <ul class="list-group list-group-flush">
         @foreach ($options as $rating => $text)
+            <li wire:key="rating-filter-{{ $rating }}"
+                class="list-group-item border-0 py-2 px-3 d-flex align-items-center hover-bg">
 
-            <li
-            wire:key='"rating-filter-{{ $rating }}'
-            class="list-group-item"
-            >
+                <input
+                    class="form-check-input me-2"
+                    wire:model.live="filter.rating"
+                    type="radio"
+                    value="{{ $rating }}"
+                    id="rating-filter-{{ $rating }}"
+                />
 
-            <input
-                class="form-check-input me-1"
-                wire:model.live="filter.rating"
-                type="radio"
-                value="{{ $rating }}"
-                id="rating-filter-{{ $rating }}"
-            />
-
-            <label class="form-check-label" for="rating-filter-{{ $rating }}">
-                {{ $text }}
-            </label>
-
+                <label class="form-check-label mb-0" for="rating-filter-{{ $rating }}">
+                    {!! str_repeat('⭐', $rating) !!} <span class="text-muted small">{{ $text }}</span>
+                </label>
             </li>
-
         @endforeach
     </ul>
 </x-card-filter>
