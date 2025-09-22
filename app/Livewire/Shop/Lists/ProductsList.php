@@ -19,6 +19,7 @@ class ProductsList extends Component
     // Available filters and their default values
     private array $filters = [
         'category' => [],
+        'search' => '',
     ];
 
     /**

@@ -2,10 +2,17 @@
 
 namespace App\Livewire\Shop\Filters;
 
-use Livewire\Component;
+use App\Traits\Livewire\WithSingleFilter;
 
-class SearchFilter extends Component
+class SearchFilter extends Filter
 {
+
+    use WithSingleFilter;
+
+    public $filter = [
+        'search' => '',
+    ];
+
     public function render()
     {
         return view('livewire.shop.filters.search-filter');

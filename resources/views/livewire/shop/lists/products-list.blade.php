@@ -7,7 +7,7 @@
         <div class="col-12">
             <div class="alert alert-warning d-flex justify-content-between align-items-center" role="alert">
                 <div>
-                    <strong>Ups!</strong> No hay productos que coincidan con estos filtros.
+                    <strong>Ups!</strong> There are not products availables with these filters. Try again!s
                 </div>
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             </div>
