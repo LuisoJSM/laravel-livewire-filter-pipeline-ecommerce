@@ -10,6 +10,8 @@
                 <div class="my-3"></div>
                 <livewire:shop.filters.color-filter />
                 <div class="my-3"></div>
+                <livewire:shop.filters.material-filter />
+                <div class="my-3"></div>
                 <livewire:shop.filters.size-filter />
                 <div class="my-3"></div>
                 <livewire:shop.filters.brand-filter />

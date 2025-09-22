@@ -2,20 +2,20 @@
 
 namespace App\Livewire\Shop\Filters;
 
-use App\Models\Brand;
+use App\Models\Material;
 use App\Traits\Livewire\WithModelsFilter;
 use App\Traits\Livewire\WithMultipleFilter;
 use Livewire\Component;
 
-class BrandFilter extends Filter
+class MaterialFilter extends Filter
 {
     use WithModelsFilter;
 
     use WithMultipleFilter;
 
-    public string $title = 'Brands';
+    public string $title = 'Materials';
 
-    protected string $eloquentModel = Brand::class;
+    protected string $eloquentModel = Material::class;
 
 
 }

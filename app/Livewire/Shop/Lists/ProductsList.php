@@ -24,6 +24,8 @@ class ProductsList extends Component
         'rating' => null,
         'color' => [],
         'size' => [],
+        'brand' => [],
+        'material' => [],
     ];
 
     /**

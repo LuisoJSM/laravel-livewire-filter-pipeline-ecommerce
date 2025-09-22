@@ -3,8 +3,10 @@
 namespace App\Enums\Filters;
 
 use App\Filters\Filter;
+use App\Filters\Shop\BrandFilter;
 use App\Filters\Shop\CategoryFilter;
 use App\Filters\Shop\ColorFilter;
+use App\Filters\Shop\MaterialFilter;
 use App\Filters\Shop\PriceFilter;
 use App\Filters\Shop\RatingFilter;
 use App\Filters\Shop\SearchFilter;
@@ -31,6 +33,8 @@ enum ShopFilters: string
     case Rating = 'rating';
     case Color = 'color';
     case Size = 'size';
+    case Brand = 'brand';
+    case Material = 'material';
 
 
     /**
@@ -51,6 +55,8 @@ enum ShopFilters: string
             self::Rating => new RatingFilter($filter),
             self::Color => new ColorFilter($filter),
             self::Size => new SizeFilter($filter),
+            self::Brand => new BrandFilter($filter),
+            self::Material => new MaterialFilter($filter),
         };
     }
 }
