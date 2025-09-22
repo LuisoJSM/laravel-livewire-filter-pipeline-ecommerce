@@ -8,7 +8,7 @@ class PriceFilter extends Filter
 {
     use WithSingleFilter;
 
-    public string $title = 'Precio';
+    public string $title = 'Price';
 
     public array $filter = [
         'price' => [

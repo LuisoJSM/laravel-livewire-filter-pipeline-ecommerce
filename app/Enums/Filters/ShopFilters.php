@@ -8,6 +8,7 @@ use App\Filters\Shop\ColorFilter;
 use App\Filters\Shop\PriceFilter;
 use App\Filters\Shop\RatingFilter;
 use App\Filters\Shop\SearchFilter;
+use App\Filters\Shop\SizeFilter;
 
 /**
  * Enum that represents all available shop filters.
@@ -29,6 +30,7 @@ enum ShopFilters: string
     case Price = 'price';
     case Rating = 'rating';
     case Color = 'color';
+    case Size = 'size';
 
 
     /**
@@ -48,6 +50,7 @@ enum ShopFilters: string
             self::Price => new PriceFilter($filter),
             self::Rating => new RatingFilter($filter),
             self::Color => new ColorFilter($filter),
+            self::Size => new SizeFilter($filter),
         };
     }
 }

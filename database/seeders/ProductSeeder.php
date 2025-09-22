@@ -177,7 +177,7 @@ class ProductSeeder extends Seeder
                 'brand' => 'Zara',
                 'color' => 'Brown',
                 'material' => 'Leather',
-                'size' => 'L',
+                'size' => 'S',
                 'price' => 105,
             ],
 
@@ -212,7 +212,7 @@ class ProductSeeder extends Seeder
                 'brand' => 'Zara',
                 'color' => 'Black',
                 'material' => 'Wool',
-                'size' => 'M',
+                'size' => 'S',
                 'price' => 160,
             ],
             [
@@ -234,7 +234,7 @@ class ProductSeeder extends Seeder
                 'brand' => 'Zara',
                 'color' => 'Green',
                 'material' => 'Wool',
-                'size' => 'M',
+                'size' => 'XL',
                 'price' => 145,
             ],
 
@@ -247,7 +247,7 @@ class ProductSeeder extends Seeder
                 'brand' => 'Adidas',
                 'color' => 'Pink',
                 'material' => 'Cotton',
-                'size' => 'M',
+                'size' => 'XL',
                 'price' => 55,
             ],
             [
@@ -269,7 +269,7 @@ class ProductSeeder extends Seeder
                 'brand' => 'Nike',
                 'color' => 'Grey',
                 'material' => 'Cotton',
-                'size' => 'M',
+                'size' => '2XL',
                 'price' => 58,
             ],
             [

@@ -23,6 +23,7 @@ class ProductsList extends Component
         'price' => [],
         'rating' => null,
         'color' => [],
+        'size' => [],
     ];
 
     /**
