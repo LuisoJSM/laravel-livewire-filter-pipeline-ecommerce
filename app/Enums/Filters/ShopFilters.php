@@ -4,6 +4,7 @@ namespace App\Enums\Filters;
 
 use App\Filters\Filter;
 use App\Filters\Shop\CategoryFilter;
+use App\Filters\Shop\ColorFilter;
 use App\Filters\Shop\PriceFilter;
 use App\Filters\Shop\RatingFilter;
 use App\Filters\Shop\SearchFilter;
@@ -27,6 +28,7 @@ enum ShopFilters: string
     case Search = 'search';
     case Price = 'price';
     case Rating = 'rating';
+    case Color = 'color';
 
 
     /**
@@ -45,6 +47,7 @@ enum ShopFilters: string
             self::Search => new SearchFilter($filter),
             self::Price => new PriceFilter($filter),
             self::Rating => new RatingFilter($filter),
+            self::Color => new ColorFilter($filter),
         };
     }
 }
