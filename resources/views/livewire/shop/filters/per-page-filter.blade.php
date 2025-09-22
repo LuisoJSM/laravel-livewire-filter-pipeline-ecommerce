@@ -1,3 +1,9 @@
 <div>
-    {{-- Care about people's approval and you will be their prisoner. --}}
+    <select wire:model.live="filter.perPage" class="form-select">
+        @foreach ($options as $option )
+
+        <option value="{{ $option }}">{{ $option }}</option>
+
+        @endforeach
+    </select>
 </div>

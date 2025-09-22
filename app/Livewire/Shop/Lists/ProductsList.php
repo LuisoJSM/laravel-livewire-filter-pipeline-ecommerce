@@ -7,6 +7,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 use Illuminate\Pipeline\Pipeline;
 use App\Enums\Filters\ShopFilters;
+use App\Livewire\Shop\Filters\PerPageFilter;
 use Livewire\Attributes\On;
 
 class ProductsList extends Component
@@ -117,7 +118,7 @@ class ProductsList extends Component
                     ->all()
             )
             ->thenReturn()
-            ->paginate(session('shop:perPage', 4));
+            ->paginate(session('shop:perPage', PerPageFilter::DEFAULT_PER_PAGE));
     }
 
     /**
