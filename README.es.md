@@ -6,7 +6,7 @@
 ![PHP](https://img.shields.io/badge/PHP-8.2-blue?logo=php&logoColor=white)
 
 
-[🌐 Read in Spanish](README.es.md)
+[🌐 Leer en inglés](README.md)
 
 Este proyecto es un **ejemplo práctico** de cómo implementar un sistema avanzado de filtros en una tienda online utilizando **Laravel 12**, **Livewire 3** y el **Patrón Pipeline**.
 

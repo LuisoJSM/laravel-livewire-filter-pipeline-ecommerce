@@ -3,6 +3,8 @@
 ![Livewire](https://img.shields.io/badge/Livewire-3-purple?logo=livewire&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.2-blue?logo=php&logoColor=white)
 
+[🌐 Read in Spanish](README.es.md)
+
 This project is a **practical example** of how to implement an advanced filtering system in an online shop using **Laravel 12**, **Livewire 3**, and the **Pipeline Pattern**.
 
 It allows filtering products by category, brand, color, size, material, price, rating, and text search.
