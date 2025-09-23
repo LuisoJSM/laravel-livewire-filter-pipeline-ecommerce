@@ -5,6 +5,9 @@
 ![Livewire](https://img.shields.io/badge/Livewire-3-purple?logo=livewire&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.2-blue?logo=php&logoColor=white)
 
+
+[🌐 Read in Spanish](README.es.md)
+
 Este proyecto es un **ejemplo práctico** de cómo implementar un sistema avanzado de filtros en una tienda online utilizando **Laravel 12**, **Livewire 3** y el **Patrón Pipeline**.
 
 Permite filtrar productos por categoría, marca, color, talla, material, precio, rating y búsqueda textual.
